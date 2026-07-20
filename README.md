@@ -25,11 +25,12 @@ Todo está en `index.html`. Busca y cambia:
 | Horario | `10:00 — 21:00` y las franjas de `nextChair()` |
 | Servicios | sección `SERVICIOS` (`menu-row`) y los `pill-set` de reservas |
 | Reseñas | sección `OPINIONES` (`blockquote`) |
+| Logo | `assets/logo.png`, `assets/favicon.png` y los `src` incrustados |
 | Redes sociales | sección `PIE` (`Síguenos`) |
 
-> El formulario de reserva es de demostración: muestra la confirmación y pide
-> confirmar por WhatsApp. Para reservas reales, enlaza el botón con el sistema
-> de citas (Fresha/Treatwell) o deja WhatsApp como canal.
+> Todos los botones de «Reservar» abren la agenda oficial de Treatwell:
+> `https://widget.treatwell.es/establecimiento/boston-barber-shop/`.
+> Para cambiarla, busca esa URL en `index.html` y sustitúyela.
 
 ## Dominio propio (bostonbarbershop.es)
 
