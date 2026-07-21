@@ -32,6 +32,8 @@
     --ease-io: cubic-bezier(0.76, 0, 0.24, 1);
   }
 
+  *, *::before, *::after { box-sizing: border-box; }
+
   body {
     background: var(--porcelain);
     color: var(--ink);
@@ -1073,27 +1075,18 @@
   .book-panel {
     position: relative;
     border: 1px solid var(--line-dark);
+    border-radius: 18px;
     padding: clamp(36px, 5vw, 64px);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 22px;
+    background: rgba(250, 249, 247, 0.02);
   }
-  .book-panel::before {
-    content: "";
-    position: absolute;
-    left: -1px; top: -1px; bottom: -1px;
-    width: 4px;
-    background: repeating-linear-gradient(135deg,
-      var(--brass) 0 10px,
-      rgba(250, 249, 247, 0.85) 10px 20px,
-      var(--espresso-2) 20px 30px);
-    animation: poleSlide 2.8s linear infinite;
-  }
-  @keyframes poleSlide { to { background-position: 0 -42.4px; } }
   .reserve-logo { width: clamp(120px, 14vw, 160px); height: auto; margin-bottom: 4px; }
   .book-panel .label { color: var(--smoke-dark); }
-  .book-line { font-size: clamp(24px, 2.6vw, 34px); line-height: 1.3; margin: 0; max-width: 20ch; }
+  .book-line { font-size: clamp(24px, 2.6vw, 34px); line-height: 1.3; margin: 0 auto; max-width: 20ch; }
   .book-line .ital { font-style: italic; color: var(--brass-bright); }
   .book-panel .btn-solid {
     display: flex;
@@ -1315,6 +1308,9 @@
   @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
 
   :focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+
+  /* ═══ Botones redondeados ═══ */
+  .btn-ghost, .btn-solid, .btn-line, .nav-cta, .mb-btn { border-radius: 999px; }
 
   /* ═══ Ajustes móviles ═══ */
   html { -webkit-text-size-adjust: 100%; }
@@ -1739,7 +1735,7 @@
           <p class="serif book-line">Elige servicio, barbero y hora — y la silla queda <span class="ital">reservada.</span></p>
           <a class="btn-solid magnetic shine" href="https://widget.treatwell.es/establecimiento/boston-barber-shop/" target="_blank" rel="noopener"><span class="m-label">Reservar cita</span></a>
           <a class="btn-wa" href="https://wa.me/34602157163?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20Boston%20Barber%20Shop" target="_blank" rel="noopener">o escríbenos por WhatsApp →</a>
-          <p class="form-hint" style="text-align: left; margin-top: 4px;">Sin pagos por adelantado. Cambia o cancela tu cita cuando quieras.</p>
+          <p class="form-hint" style="margin-top: 4px;">Sin pagos por adelantado. Cambia o cancela tu cita cuando quieras.</p>
         </div>
       </div>
     </div>
