@@ -23,7 +23,7 @@ Todo está en `index.html`. Busca y cambia:
 | Teléfono / WhatsApp | `602 15 71 63` y `34602157163` |
 | Dirección | `Arcones Gil` |
 | Horario | `10:00 — 21:00` y las franjas de `nextChair()` |
-| Servicios | sección `SERVICIOS` (`menu-row`) y los `pill-set` de reservas |
+| Servicios y precios | sección `SERVICIOS` (`menu-row`) — copiados del menú de Treatwell |
 | Reseñas | sección `OPINIONES` (`blockquote`) |
 | Logo | `assets/logo.png`, `assets/favicon.png` y los `src` incrustados |
 | Redes sociales | sección `PIE` (`Síguenos`) |
